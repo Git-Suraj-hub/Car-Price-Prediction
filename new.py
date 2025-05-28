@@ -1,22 +1,26 @@
 import numpy as np
-import streamlit as st
 import pandas as pd
+import streamlit as st
 import pickle
-import sklearn
+import os
+
+# Import model-related classes
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import StandardScaler, LabelEncoder
 
 # Load CSV to get dropdown options
 dataframe = pd.read_csv('quikr_car.csv')
 dataframe.columns = dataframe.columns.str.strip()  # Strip column name spaces
 
-import os
-st.write(os.path.exists('trained_model.sav'))  # Should print True
-
+# Check if model file exists
+st.write(os.path.exists('trained_model.sav'))
 
 # Load model and preprocessing tools
 trained_model = pickle.load(open('trained_model.sav', 'rb'))
 scaler = pickle.load(open('scaler.sav', 'rb'))
 label_encoder = pickle.load(open('Label_encoder.sav', 'rb'))
 feature_columns = pickle.load(open('feature_columns.sav', 'rb'))
+
 
 # Prepare select box options
 car_names = sorted(dataframe['name'].dropna().unique())
