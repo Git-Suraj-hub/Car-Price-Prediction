@@ -4,14 +4,14 @@ import pandas as pd
 import pickle
 
 # Load CSV to get dropdown options
-dataframe = pd.read_csv('C:\\Users\\suraj\\PycharmProjects\\CarPrice_Prediction\\quikr_car.csv')
+dataframe = pd.read_csv('quikr_car.csv')
 dataframe.columns = dataframe.columns.str.strip()  # Strip column name spaces
 
 # Load model and preprocessing tools
-trained_model = pickle.load(open('C:/Users/suraj/PycharmProjects/CarPrice_Prediction/trained_model.sav', 'rb'))
-scaler = pickle.load(open('C:/Users/suraj/PycharmProjects/CarPrice_Prediction/scaler.sav', 'rb'))
-label_encoder = pickle.load(open('C:/Users/suraj/PycharmProjects/CarPrice_Prediction/Label_encoder.sav', 'rb'))
-feature_columns = pickle.load(open('C:/Users/suraj/PycharmProjects/CarPrice_Prediction/feature_columns.sav', 'rb'))
+trained_model = pickle.load(open('trained_model.sav', 'rb'))
+scaler = pickle.load(open('scaler.sav', 'rb'))
+label_encoder = pickle.load(open('Label_encoder.sav', 'rb'))
+feature_columns = pickle.load(open('feature_columns.sav', 'rb'))
 
 # Prepare select box options
 car_names = sorted(dataframe['name'].dropna().unique())
