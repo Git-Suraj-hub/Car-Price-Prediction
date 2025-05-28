@@ -79,7 +79,7 @@ The app will automatically open in your browser at `http://localhost:8501`.
 
 ## 📸 Screenshots
 
-![APP SCREENSHOT]("https://github.com/Git-Suraj-hub/Car-Price-Prediction/blob/main/Page1.png")
+![APP SCREENSHOT]("Page1.png")
 
 ---
 
