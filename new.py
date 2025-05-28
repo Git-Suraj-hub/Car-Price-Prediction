@@ -12,8 +12,7 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder
 dataframe = pd.read_csv('quikr_car.csv')
 dataframe.columns = dataframe.columns.str.strip()  # Strip column name spaces
 
-# Check if model file exists
-st.write(os.path.exists('trained_model.sav'))
+
 
 # Load model and preprocessing tools
 trained_model = pickle.load(open('trained_model.sav', 'rb'))
