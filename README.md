@@ -22,11 +22,15 @@ A machine learning-powered web app built with **Python** and **Streamlit** that 
 
 ```text
 car-price-prediction/
-├── car_price_prediction_app.py     # Streamlit application code
-├── car_price_model.pkl             # Trained Linear Regression model
-├── preprocessing_pipeline.pkl      # Encoders and scaler
+├── new.py     # Streamlit application code
+├── feautre_columns.sav             # Feautre Column Model
+├── Label_encoder.sav               # Label Encoding Model
+├── LICENSE                         # MIT License
+├── model_columns.pkl               # Column model
+├── quick_car_csv                   # Car Price Dataset
 ├── requirements.txt                # Python dependencies
 └── README.md                       # Project documentation
+├── trained_model.pkl             # Trained Linear Regression model
 ```
 
 ---
@@ -57,7 +61,7 @@ car-price-prediction/
 4. **Run the application**:
 
    ```bash
-   streamlit run car_price_prediction_app.py
+   streamlit run new.py
    ```
 
 ---
@@ -85,6 +89,11 @@ You can deploy this app on **Streamlit Cloud**:
 5. Click **Deploy**.
 
 Your app will be live at `https://<your-username>-car-price-prediction.streamlit.app`.
+
+---
+## 📸 Screenshots
+
+![Screenshot](Page1.png)
 
 ---
 
