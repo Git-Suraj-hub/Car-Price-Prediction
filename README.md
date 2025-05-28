@@ -1,7 +1,7 @@
 
 # 🚗 Car Price Prediction Web App
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://car-price-predictor.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://car-price-prediction-web.streamlit.app/)
 [![GitHub stars](https://img.shields.io/github/stars/Git-Suraj-hub/Car-Price-Prediction?style=social)](https://github.com/Git-Suraj-hub/Car-Price-Prediction.git)
 
 A machine learning-powered web app built with **Python** and **Streamlit** that predicts the resale value of a car based on input features like car name, model, fuel type, and kilometers driven. Uses a trained **Linear Regression** model with real-time predictions and interactive UI.
