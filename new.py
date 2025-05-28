@@ -8,6 +8,10 @@ import sklearn
 dataframe = pd.read_csv('quikr_car.csv')
 dataframe.columns = dataframe.columns.str.strip()  # Strip column name spaces
 
+import os
+print(os.path.exists('trained_model.sav'))  # Should print True
+
+
 # Load model and preprocessing tools
 trained_model = pickle.load(open('trained_model.sav', 'rb'))
 scaler = pickle.load(open('scaler.sav', 'rb'))
