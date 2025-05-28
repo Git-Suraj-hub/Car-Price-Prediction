@@ -2,6 +2,7 @@ import numpy as np
 import streamlit as st
 import pandas as pd
 import pickle
+import sklearn
 
 # Load CSV to get dropdown options
 dataframe = pd.read_csv('quikr_car.csv')
