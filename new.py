@@ -22,8 +22,14 @@ feature_columns = pickle.load(open('feature_columns.sav', 'rb'))
 
 
 # Prepare select box options
-car_names = sorted(dataframe['name'].dropna().unique())
-models = sorted(dataframe['company'].dropna().unique())
+# Sort car names by popularity (descending frequency)
+car_name_counts = dataframe['name'].value_counts()
+car_names = car_name_counts.index.tolist()  # Most popular to least popular
+
+# Similarly for models (companies)
+model_counts = dataframe['company'].value_counts()
+models = model_counts.index.tolist()
+
 fuel_types = ['Petrol', 'Diesel', 'LPG']  # Map to 0, 1, 2
 
 # Fuel mapping
