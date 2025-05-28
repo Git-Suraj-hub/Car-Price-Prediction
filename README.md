@@ -3,7 +3,7 @@
 
 A simple and intuitive web application built using **Streamlit** that predicts the price of a car based on various input features such as car name, model, fuel type, kilometers driven, and more.
 
-**Developed by [Suraj](https://github.com/your-github-username)**
+**Developed by [Suraj](https://github.com/Git-Suraj-hub)**
 
 ---
 
@@ -48,7 +48,7 @@ car-price-prediction/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/suraj/car-price-prediction.git
+git clone https://github.com/Git-Suraj-hub/Car-Price-Prediction.git
 cd car-price-prediction
 ```
 
@@ -79,7 +79,7 @@ The app will automatically open in your browser at `http://localhost:8501`.
 
 ## 📸 Screenshots
 
-![APP SCREENSHOT]("Page1.png")
+![APP SCREENSHOT]("https://github.com/Git-Suraj-hub/Car-Price-Prediction/blob/0934b80941c304236e04200372705cc9df14dddc/Page1.png")
 
 ---
 
